@@ -1,8 +1,12 @@
 {
   "name": "@stevvvns/inc-router",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
+  "files": [
+    "dist/index.js",
+    "LICENSE"
+  ],
   "scripts": {
     "example": "npx serve",
     "build": "npx esbuild --bundle --keep-names --format=esm --platform=browser --outfile=dist/index.js --minify src/index.js",
