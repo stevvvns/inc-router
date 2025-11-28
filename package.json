@@ -1,0 +1,24 @@
+{
+  "name": "@stevvvns/inc-router",
+  "type": "module",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "scripts": {
+    "example": "npx serve",
+    "build": "npx esbuild --bundle --keep-names --format=esm --platform=browser --outfile=dist/index.js --minify src/index.js",
+    "pub": "npm run build && npm publish --access=public",
+    "lint": "npx eslint src --fix; npx prettier src --single-quote --write"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "@stevvvns/incomponent": "^0.1.0",
+    "router5": "^8.0.1",
+    "router5-plugin-browser": "^8.0.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "eslint": "^9.39.1"
+  }
+}
